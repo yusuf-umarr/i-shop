@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:i_shop/src/features/account/view_model/account_view_model.dart';
-import 'package:i_shop/src/features/account/widgets/single_product.dart';
 import 'package:i_shop/src/features/other_detail/view/other_detail_screen.dart';
 import 'package:provider/provider.dart';
 
@@ -35,9 +34,7 @@ class _OrdersState extends State<Orders> {
 
     orderProducts = provider.orderProductList;
 
-    orders =
-        (await accountServices.fetchMyOrders(context: context)).cast<Order>();
-    setState(() {});
+  
   }
 
   @override
